@@ -20,5 +20,5 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: PipAuthenticate@1
+- task: PublishBuildArtifacts@1
   displayName: "pblish artifact"
